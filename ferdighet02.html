@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>Ferdighet 2 - Onclick => Kjøre funksjon som endrer innerHTML til element ut fra Id</p>
+    <h1>Hest er best som?</h1>
+    <h2 onclick="go()" id="a1">Transport</h2>
+    <h2 onclick="go1()" id="a2">Pålegg</h2>
+    <h2 onclick="go2()" id="a3">Kjæledyr</h2>
+    
+
+    <script>
+        function go() {
+            document.getElementById('a1').innerHTML = 'Feil';
+        }
+        function go1() {
+            document.getElementById('a2').innerHTML = 'Riktig';
+        }
+        function go2() {
+            document.getElementById('a3').innerHTML = 'Feil';
+        }
+    </script>
+</body>
+</html>

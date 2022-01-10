@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml%22%3E
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>Ferdighet 2 - Onclick => Kjøre funksjon som endrer innerHTML til element ut fra Id</p>
+    <!-- Question -->
+    <h2 id="spm">Hest er best som?</h2>
+    <p id="Feedback"> Velg ett alternativ</p>
+
+    <!--  Buttons  -->
+    <h3 id="button1" onclick="giveFeedback( 'button1',false ) "> Transport  </h3>
+    <h3 id="button2" onclick="giveFeedback( 'button2',false ) "> Kjæledyr </h3>
+    <h3 id="button3" onclick="giveFeedback( 'button3',true  ) "> Pålegg      </h3>
+
+    <script>
+        function giveFeedback(button_id,is_correct) {
+    // Gives text feedback on pressed button wheter it was the correct quiz answer or not 
+            var text = "Feil"; 
+            if ( is_correct==true ) { text="Riktig"; }
+            document.getElementById ( button_id ) .innerHTML=text;
+
+    }
+    </script>
+</body>
+</html>
